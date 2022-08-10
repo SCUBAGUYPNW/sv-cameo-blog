@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-import headerLogo from "../public/assets/Headerlogo.png";
+import headerLogo from "../public/assets/Tiedie-banner.webp";
 import ads from "../public/assets/ads.png";
 
 const Header = () => {
@@ -12,7 +12,6 @@ const Header = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("rgb(212 212 216)");
   const [linkColor, setLinkColor] = useState("#1f2937");
-  const router = useRouter();
 
   const handleNav = () => {
     setNav(!nav);
@@ -52,23 +51,13 @@ const Header = () => {
                 Home
               </li>
             </Link>
-            <Link href="/#about">
+            <Link href="/About">
               <li className="md:ml-2 lg:ml-5 text small uppercase hover:border-b">
                 About
               </li>
             </Link>
-            <Link href="/#skills">
+            <Link href="/Contact">
               <li className="md:ml-2 lg:ml-5 text small uppercase hover:border-b">
-                Skills
-              </li>
-            </Link>
-            <Link href="/#projects">
-              <li className="md:ml-2 lg:ml-5 text small uppercase hover:border-b">
-                Projects
-              </li>
-            </Link>
-            <Link href="/#contact">
-              <li className="md:ml-2 md:mr-0 lg:ml-5 lg:mr-10 text small uppercase hover:border-b">
                 Contact
               </li>
             </Link>
@@ -104,7 +93,7 @@ const Header = () => {
             </div>
             <div className="border-b border-gray-600 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
-                Get ready for the tie die flyby. Follow the adventures of SV
+                Get ready for a tie-die flyby. Follow the adventures of SV
                 Cameo!
               </p>
             </div>
